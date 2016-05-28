@@ -1,0 +1,43 @@
+﻿@{
+    var r = new Random();
+    var randomNum = r.Next();
+    ViewBag.Title = "Home Page";
+}
+
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="tableContainer">
+            <div class="col-md-12 text-center">
+                <div class="tableHeader col-md-3">
+                    <span>#</span>
+                </div>
+                <div class="tableHeader col-md-3">
+                <span>First Name</span>
+                </div>
+                <div class="tableHeader col-md-3">
+                    <span>Middle Name</span>
+                </div>
+                <div class="tableHeader col-md-3">
+                    <span>Last Name</span>
+                </div>
+            </div>
+            <div class="tableContent col-md-12"></div>
+            <div class="tableFotter col-md-12">
+                <div class="col-md-3">
+                    <input type="text" name="search_number" data-index="0" placeholder="Search Number" class="form-control" />
+                </div>
+                <div class="col-md-3">
+                    <input type="text" name="search_firstName" data-index="1" placeholder="Search First Name" class="form-control" />
+                </div>
+                <div class="col-md-3">
+                    <input type="text" name="search_middleName" data-index="2" placeholder="Search Middle Name" class="form-control" />
+                </div>
+                <div class="col-md-3">
+                    <input type="text" name="search_LastName" data-index="3" placeholder="Search Last Name" class="form-control" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="~/Scripts/Home/home.js?v=@randomNum"></script>
